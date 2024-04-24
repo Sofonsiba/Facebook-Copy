@@ -1,0 +1,134 @@
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 56px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-header-side {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 14px;
+  gap: 10px;
+}
+
+.left-header-side > img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.search-input {
+  height: 38px;
+  width: 200px;
+  border: none;
+  border-radius: 20px;
+  background-image: url(../images/icons/search.svg);
+  background-position: 12px 13px;
+  background-repeat: no-repeat;
+  background-color: #F0F2F5;
+  padding-left: 36px;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: gray;
+  font-family: "Helvetika", sans-serif;
+  font-size: 14px;
+}
+
+.middle-header,
+.middle-header > div,
+.right-header-side,
+.right-header-container,
+.right-header-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle-header,
+.right-header-container {
+  gap: 8px;
+}
+
+.middle-header > div {
+  width: 112px;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.middle-header > div:hover {
+  background-color: rgb(236, 236, 236);
+}
+
+.middle-header > div:first-child {
+  box-sizing: border-box;
+  border-bottom: solid 3px #2196F3;
+  border-radius: 0;
+}
+
+.middle-header > div:first-child:hover {
+  background-color: initial;
+}
+
+.middle-header div > img {
+  width: 24px;
+  height: 24px;
+}
+
+.right-header-side {
+  margin-right: 14px;
+}
+
+.right-header-container div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(236, 236, 236);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.right-header-container div:hover {
+  background-color: rgb(225, 225, 225)
+}
+
+.right-header-container div:active {
+  background-color: rgb(210, 210, 210);
+  width: 38px;
+  height: 38px;
+}
+
+.right-header-container div:active img {
+  width: 18px;
+  height: 18px;
+}
+
+.right-header-container img {
+  width: 20px;
+  height: 20px;
+}
+
+div .user-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+
+
+
+
