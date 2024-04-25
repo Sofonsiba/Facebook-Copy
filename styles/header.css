@@ -56,8 +56,7 @@ header {
   align-items: center;
 }
 
-.middle-header,
-.right-header-container {
+.middle-header {
   gap: 8px;
 }
 
@@ -76,6 +75,7 @@ header {
 
 .middle-header > div:first-child {
   box-sizing: border-box;
+  height: 56px;
   border-bottom: solid 3px #2196F3;
   border-radius: 0;
 }
@@ -90,7 +90,14 @@ header {
 }
 
 .right-header-side {
-  margin-right: 14px;
+  height: 100%;
+  margin-right: 16px;
+  gap: 12px;
+}
+
+.right-header-container {
+  width: 46px;
+  height: 100%;
 }
 
 .right-header-container div {
@@ -103,11 +110,11 @@ header {
 }
 
 .right-header-container div:hover {
-  background-color: rgb(225, 225, 225)
+  background-color: rgb(226, 226, 226);
 }
 
 .right-header-container div:active {
-  background-color: rgb(210, 210, 210);
+  background-color: rgb(215, 215, 215);
   width: 38px;
   height: 38px;
 }
@@ -117,18 +124,18 @@ header {
   height: 18px;
 }
 
-.right-header-container img {
+.right-header-container div:active .user-photo {
+  width: 38px;
+  height: 38px;
+}
+
+.right-header-container div > img {
   width: 20px;
   height: 20px;
 }
 
-div .user-photo {
+.right-header-container div > .user-photo {
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
-
-
-
-
-
