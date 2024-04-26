@@ -7,6 +7,9 @@ header {
   height: 56px;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
+  border-bottom: solid 1px rgb(240, 240, 240);
+  box-shadow: 0 1px 3px 0px rgba(200, 200, 200, 0.3);
 }
 
 .left-header-side {
@@ -32,7 +35,7 @@ header {
   background-image: url(../images/icons/search.svg);
   background-position: 12px 13px;
   background-repeat: no-repeat;
-  background-color: #F0F2F5;
+  background-color: rgb(240, 242, 245);
   padding-left: 36px;
 }
 
@@ -91,8 +94,8 @@ header {
 
 .right-header-side {
   height: 100%;
-  margin-right: 16px;
-  gap: 12px;
+  margin-right: 14px;
+  gap: 4px;
 }
 
 .right-header-container {
@@ -104,17 +107,17 @@ header {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: rgb(236, 236, 236);
+  background-color: rgb(216, 218, 223);
   cursor: pointer;
   transition: background-color 0.2s;
 }
 
 .right-header-container div:hover {
-  background-color: rgb(226, 226, 226);
+  background-color: rgb(200, 202, 207);
 }
 
 .right-header-container div:active {
-  background-color: rgb(215, 215, 215);
+  background-color: rgb(190, 192, 197);
   width: 38px;
   height: 38px;
 }
@@ -138,4 +141,18 @@ header {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+
+.notice-container {
+  position: relative;
+}
+
+.right-header-container .notice-counter {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 16px;
+  height: 16px;
+  background-color: red;
+  color: white;
 }
