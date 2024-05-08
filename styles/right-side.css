@@ -1,0 +1,57 @@
+aside {
+  position: fixed;
+  top: 56px;
+  right: 0;
+  bottom: 0;
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.right-side-container {
+  width: 54%;
+  margin-right: 4px;
+}
+
+.right-side-container > div:nth-child(1) {
+  margin-top: 22px;
+  padding-left: 8px;
+  color: rgb(100, 100, 100);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.right-side-container > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  box-sizing: border-box;
+  gap: 12px;
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.right-side-container > div:nth-child(2):hover {
+  background-color: #E4E6E9;
+}
+
+.add-conv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #D8DADF;
+}
+
+.add-conv > img {
+  width: 14px;
+  height: 14px
+}
+

@@ -16,6 +16,7 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  width: 33.3%;
   margin-left: 14px;
   gap: 10px;
 }
@@ -49,9 +50,7 @@ header {
   font-size: 14px;
 }
 
-.middle-header,
 .middle-header > div,
-.right-header-side,
 .right-header-container,
 .right-header-container div {
   display: flex;
@@ -60,7 +59,11 @@ header {
 }
 
 .middle-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 8px;
+  width: 33.3%;
 }
 
 .middle-header > div {
@@ -93,9 +96,13 @@ header {
 }
 
 .right-header-side {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   height: 100%;
   margin-right: 14px;
   gap: 4px;
+  width: 33.3%;
 }
 
 .right-header-container {
