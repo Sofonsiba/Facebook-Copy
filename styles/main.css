@@ -2,14 +2,35 @@ main {
   padding: 56px 33.6% 0 33.6%;
 }
 
+.create-story-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  margin-top: 14px;
+  box-sizing: border-box;
+  padding: 6px 6px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 1px 2px 2px -1px #cfcfcf,
+  -1px 0px 2px -1px #cfcfcf;
+}
+
 .create-story {
   display: flex;
   align-items: center;
   box-sizing: border-box;
+  width: 100%;
+  height: 100%;
   background-color: white;
-  margin-top: 14px;
-  padding: 10px 10px;
+  padding: 8px 8px;
   border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.create-story:hover {
+  background-color: rgb(240, 242, 245);
 }
 
 article {
@@ -18,4 +39,102 @@ article {
   height: 400px;
   background-color: white;
   border-radius: 8px;
+  box-shadow: 1px 2px 2px -1px #cfcfcf,
+  -1px 0px 2px -1px #cfcfcf;
+}
+
+.add-story {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(224, 244, 255);
+}
+
+.add-story > img {
+  width: 16px;
+}
+
+.header-new-story > div:nth-child(1) {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.header-new-story > div:nth-child(2) {
+  font-size: 12px;
+}
+
+.get-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 1px 2px 2px -1px #cfcfcf,
+  -1px 0px 2px -1px #cfcfcf;
+  border-radius: 8px;
+}
+
+.get-message > div:nth-child(1) {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.get-message > div > div {
+  background-color: #eeeeee;
+  border-radius: 19px;
+  width: 100%;
+  padding: 8px;
+  color: rgb(107, 107, 107);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.get-message > div > div:hover {
+  background-color: #e4e4e4;
+}
+
+img[alt="main-user-photo"] {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.get-message-bottom-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  padding-top: 10px;
+  border-top: solid 1px rgb(218, 218, 218)
+}
+
+.get-message-bottom-menu .get-message-bottom-menu-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: white;
+  padding: 6px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.get-message-bottom-menu .get-message-bottom-menu-section:hover {
+  background-color: #eeeeee;
+}
+
+.get-message-bottom-menu img {
+  width: 28px;
 }
