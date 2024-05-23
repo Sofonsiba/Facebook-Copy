@@ -229,10 +229,7 @@ img[alt="main-user-photo"] {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
   padding: 6px 10px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
 }
 
 .first-line-bottom-article {
@@ -299,9 +296,3 @@ img[alt="main-user-photo"] {
 .second-line-buttons:hover {
   background-color: rgb(240, 242, 245);
 }
-
-
-
-
-
-
