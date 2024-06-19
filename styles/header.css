@@ -69,6 +69,7 @@ header {
 .middle-header > div {
   width: 112px;
   height: 48px;
+  position: relative;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -95,6 +96,26 @@ header {
   height: 24px;
 }
 
+.tooltip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -38px;
+  color: white;
+  background-color: rgb(27, 27, 27);
+  border-radius: 8px;
+  font-size: 12px;
+  padding: 8px 12px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.middle-header > div:hover .tooltip {
+  opacity: 0.8;
+}
+
 .right-header-side {
   display: flex;
   align-items: center;
@@ -113,6 +134,7 @@ header {
 .right-header-container div {
   width: 40px;
   height: 40px;
+  position: relative;
   border-radius: 50%;
   background-color: rgb(216, 218, 223);
   cursor: pointer;
@@ -162,4 +184,27 @@ header {
   height: 16px;
   background-color: red;
   color: white;
+  pointer-events: none;
 }
+
+.right-header-container  .right-tooltip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 34px;
+  bottom: -42px;
+  color: white;
+  background-color: rgb(37, 37, 37);
+  border-radius: 8px;
+  font-size: 12px;
+  padding: 6px 10px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+  width: auto;
+}
+  
+  .right-header-container:hover .right-tooltip {
+    opacity: 0.8;
+  }
